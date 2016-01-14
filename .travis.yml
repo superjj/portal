@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: openshift
+  user: mybiojs@gmail.com
+  password:
+    secure: UOH3tde9fO7O51Nu6MDpC35qQJ65ri/1/bBMl2JJI7qI3tKVF4rbKVEk6+pX8lQyFWwRjJwKGM4QT5cxrvMxFm+06zBL2lDlC47dXMyBA6jpedcZMf0AIphehKikKzOqwlff/LB/VYlI/GfcaIdVlLxYIOXQuN3DpuYOtKoAAIMwlNHC5uPmJ2GZ8DtXRgplaYqfTzHLEQrpWeIyTpGwQJnwjDOoHLQwoAKPp+TX6yK/7eGpEQ2iNnxQblAkZXPOb5Bf4bQhw0H14ily3nefjKSwUs7z7lFTWVKpk2fyWk9ZmoWF92YrphZLjnMgRdLXquAbM/aXYfcjjowqveOzdsgFvaia59aXX+oCiMAM/8RTeQFBuGZpF9xEIMSNgmyAA329oSFT7sfN8jUkZTne2NIIMHCD+ETBHTUK83xKhbNZFmWTEu9QdBqEFjLriL6aGLlnocwzOIFmuRx8+SvebraK51G8pXMRFt4VpNZu+6FGlKgZCC5O6KUfnHddmXlG3u7CT7AFry/MIcbPwPCr3tP+BeD7QW2xA7N95DtGbCtOTFOFo11DS/gvxhf+HOyfv3+UPzeXWtS0IRhrb3W7GAieOhdjrIU3sQPICOloFC+PWHBcgdom7ySjfcnPUOSYbAiMgL5VNjh0t0+X+COgCtIt1Yz4YE3Q+eZaTMgWZNY=
+  app: portal
+  domain: portal-biojs.rhcloud.com
+  on:
+    repo: DennisSchwartz/portal
