@@ -1,0 +1,26 @@
+@import '../../../node_modules/drawrnajs/style/bootstrap.css';
+@import '../../../node_modules/drawrnajs/style/spectrum.css';
+@import '../../../node_modules/drawrnajs/style/style.css';
+#seqinput {
+  display: none;
+}
+body, #opts, .cy {
+  background-color: #263238;
+}
+#opts, body {
+  border-left: 1px solid #f9f9f9;
+}
+#opts {
+  height: 100%;
+}
+#opts p {
+  color: #f9f9f9;
+}
+.control {
+  color: #f9f9f9;
+  width: 110px;
+  padding: 5px 15px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 2px solid #f9f9f9;
+}
