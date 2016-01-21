@@ -79,6 +79,11 @@ h2 {
 h3 {
   font-size: 2em;
 }
+/* Brandpage */
+.tag-brandpage h1 {
+  font-size: 3.2em;
+}
+
 /*Helpers*/
 .uppercase {
   text-transform: uppercase;
