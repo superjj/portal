@@ -4,10 +4,11 @@
     attributes by default, but you can also customise it to behave differently if you prefer. }}
 
 
-{{! Everything inside the #post tags pulls data from the page }}
 {{#post}}
-  {{#has tag="brandpage"}}
-    <div class="green darken-2 green-text text-lighten-4">
+{{#has tag="brandpage"}}
+{{! Everything inside the #post tags pulls data from the page }}
+
+    <div class="green darken-2 white-text">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -15,10 +16,10 @@
           </div>
         </div>
         <div class="row pb-2 mb-0">
-          <div class="col s12 m5">
-            <p>magna at urna accumsan, a vehicula nisi rutrum. In nec ante consequat, sagittis lectus vulputate, blandit dui. Ut tincidunt, ligula vitae</p>
-          </div>
           <div class="col s12 m7">
+         <!--  -->
+          </div>        
+          <div class="col s12 m5">
             <p><a class="waves-effect waves-yellow btn uppercase red accent-4 white-text" href="#"><i class="material-icons left">play_arrow</i>Get Started</a></p>
           </div>
         </div>
@@ -33,21 +34,9 @@
     <section>
       {{> example}}
     </section>
-
-  {{else}}
-    <main class="content" role="main">
-        <article class="{{post_class}}">
-
-            <header class="post-header">
-                <h1 class="post-title">{{title}}</h1>
-            </header>
-
-            <section class="post-content">
-                {{content}}
-            </section>
-
-        </article>
-    </main>
-  {{/has}}
+    {{/has}}
 {{/post}}
+
+
+
 

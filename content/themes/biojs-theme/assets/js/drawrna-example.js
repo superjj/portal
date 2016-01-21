@@ -51856,8 +51856,8 @@ var Optspanel = Backbone.View.extend({
   		this.el.innerHTML += '<div class="col-md-3"><input type="text" id="ucolor"></div>';
         this.el.innerHTML += '<div class="col-md-9 colsel"><p>Color of selected nucleic acids</p></div>';
         this.el.innerHTML += '<div class="col-md-3 colsel"><input type="text" id="selcolor"></div>';
-    	this.el.innerHTML += '<div class="cntrl"><input class="button" id="center" value="Reset viewport" readonly="readonly">'
-    	               + '<input class="button" id="export" value="Export as PNG" readonly="readonly"></div>';
+    	this.el.innerHTML += '<div class="cntrl"><button class="control" id="center">ZOOM 100%</button>'
+    	               + '<button class="control" id="export">EXPORT IMG</button></div>';
 
         //init colors
         this.initColors(this);
