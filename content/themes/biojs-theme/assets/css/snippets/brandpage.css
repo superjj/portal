@@ -1,6 +1,6 @@
-@import '../../../node_modules/drawrnajs/style/bootstrap.css';
-@import '../../../node_modules/drawrnajs/style/spectrum.css';
-@import '../../../node_modules/drawrnajs/style/style.css';
+@import '../drawrnajs/style/bootstrap.css';
+@import '../drawrnajs/style/spectrum.css';
+@import '../drawrnajs/style/style.css';
 #seqinput {
   display: none;
 }
