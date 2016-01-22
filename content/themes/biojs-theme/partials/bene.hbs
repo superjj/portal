@@ -1,5 +1,9 @@
 <div class="row">
   <div class="col s12">
-      <p class="blue-text">B edit / 3</p>
+    {{#get "posts" slug="starters-benefits"}}
+      {{#foreach posts}}
+        {{ content }} <br/> 
+      {{/foreach}}
+    {{/get}}
   </div>
 </div>
