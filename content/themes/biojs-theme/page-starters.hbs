@@ -10,24 +10,24 @@
 
     <div class="green darken-2 white-text">
       <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h1 class="brand-title">Present your results in a brand-new light</h1>
+       {{#get "posts" slug="starters-header"}}
+        {{#foreach posts}}
+            <div class="row">
+              <div class="col s12">
+                <h1 class="brand-title">{{ title }}</h1>
+              </div>
+            </div>
+            <div class="row pb-2 mb-0">
+              <div class="col s12 m7">
+                    {{ content }} <br/> 
+              </div>        
+              <div class="col s12 m5">
+                <p><a class="waves-effect waves-yellow btn uppercase red accent-4 white-text" href="#"><i class="material-icons left">play_arrow</i>Get Started</a></p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row pb-2 mb-0">
-          <div class="col s12 m7">
-            {{#get "posts" slug="starters-header"}}
-              {{#foreach posts}}
-                {{ content }} <br/> 
-              {{/foreach}}
-            {{/get}}
-          </div>        
-          <div class="col s12 m5">
-            <p><a class="waves-effect waves-yellow btn uppercase red accent-4 white-text" href="#"><i class="material-icons left">play_arrow</i>Get Started</a></p>
-          </div>
-        </div>
-      </div>
+        {{/foreach}}
+      {{/get}}
     </div>
     <section class="container">
       {{> bene }}
@@ -37,13 +37,18 @@
     </section>
     <section class="container">
       <div class="row">
-        <div class="col s12 m8">
+        <div class="col s12">
           {{ content }}
-        </div>
-        <div class="col s12 m4">
-          <img src="http://placehold.it/200x150" alt="BioJS makes yout life easier" />
+
         </div>
       </div>
+      <hr />
+      <div class="row">
+         {{> tip-section }}
+      </div>
+    </section>
+    <section class="green darken-4 white-text center">
+      {{> showcase}}
     </section>
     <section>
       <div class="container">
