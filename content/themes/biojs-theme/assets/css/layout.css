@@ -1,3 +1,12 @@
 .tag-brandpage h1 {
   font-size: 3.2em;
 }
+.link-icon {
+  position: relative;
+  top: 2px;
+}
+@media (min-width: 768px) {
+.carousel-item.large {
+  width: 450px;
+ }
+}
