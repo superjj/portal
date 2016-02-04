@@ -1,0 +1,10 @@
+$pink: #dd77dd;
+$blue: #1122dd;
+
+@import 'screen';
+@import 'layout';
+@import 'frontpage';
+
+* {
+	background-color: $blue;
+}
