@@ -26,9 +26,10 @@
 
 </main> -->
 
-<header class="bg-section bg-center bg-cover header-section green darken-2  pb-2 green-text text-lighten-5 valign-wrapper" style="{{#if  @blog.cover}}background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+<header class="bg-section bg-center bg-cover header-section biojs-green biojs-white-text pb-2  valign-wrapper relative" style="{{#if  @blog.cover}}background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+  <div class="veil biojs-green"></div>
   <div class="green-text text-lighten-5 container valign">
-    <div class="row blunt-end">
+    <div class="row blunt-end relative">
       <div class="col s12 center-align">
           <h1>Make your biological data shine</h1>
           <p class="signal">With BioJS you are able to create the ambitious data visualization of your dreams.
@@ -37,10 +38,10 @@
           <div class="row mt-3">
 
             <div class="col s12 m6 center-align">
-              <p><a class="waves-effect waves-light uppercase btn blue-grey lighten-4 black-text" href="/developers">Developers</a></p>
+              <p><a class="waves-effect waves-light uppercase btn weak-action" href="/developers">Developers</a></p>
             </div>
             <div class="col s12 m6 center-align">
-              <p><a class="waves-effect waves-light uppercase btn red accent-4 white-text" href="/starters">Get Started</a></p>
+              <p><a class="waves-effect waves-light uppercase btn action" href="/starters">Get Started</a></p>
             </div>
           </div>
       </div>

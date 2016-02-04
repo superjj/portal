@@ -33,7 +33,7 @@
     display:none;
 }
 .header-section {
-  background-image: url('http://placebear.com/g/2400/1400');
+  background-image: url('/assets/img/landscapes/typing.jpg');
   position: relative;
   height: 80vh;
 }
@@ -84,9 +84,6 @@
 }
 .bg-section:first-child {
   background-image: url('http://placebear.com/g/900/500');
-}
-.bg-section:nth-child(2) {
-  background-image: url('http://placebear.com/g/1600/500');
 }
 .bg-section:nth-child(3) {
   background-image: none;

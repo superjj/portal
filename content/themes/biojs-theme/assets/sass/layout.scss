@@ -1,3 +1,13 @@
+body {
+  background-color: color('white');
+}
+footer {
+  &.page-footer {
+    background-color: color('green');
+  }
+}
+
+
 .tag-brandpage h1 {
   font-size: 3.2em;
 }
@@ -9,4 +19,29 @@
 .carousel-item.large {
   width: 450px;
  }
+}
+/* Buttons */
+.btn {
+  &.action {
+    color: color('white');
+    background-color: color('pink');
+  }
+  &.weak-action {
+    color: color('white');
+    background-color: color('black');
+  }
+}
+
+/* Helpers */
+.veil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.75;
+}
+.relative {
+  position: relative;
 }

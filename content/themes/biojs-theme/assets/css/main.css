@@ -1,3 +1,33 @@
+.biojs-green {
+  background-color: #116611; }
+
+.biojs-green-text {
+  color: #116611; }
+
+.biojs-light-green {
+  background-color: #04E824; }
+
+.biojs-light-green-text {
+  color: #04E824; }
+
+.biojs-white {
+  background-color: #FFFFFC; }
+
+.biojs-white-text {
+  color: #FFFFFC; }
+
+.biojs-black {
+  background-color: #072212; }
+
+.biojs-black-text {
+  color: #072212; }
+
+.biojs-pink {
+  background-color: #EF2D56; }
+
+.biojs-pink-text {
+  color: #EF2D56; }
+
 .brand-logo {
   position: absolute;
   display: inline-block;
@@ -124,6 +154,12 @@ h3 {
 .bg-cover {
   background-size: cover; }
 
+body {
+  background-color: #FFFFFC; }
+
+footer.page-footer {
+  background-color: #116611; }
+
 .tag-brandpage h1 {
   font-size: 3.2em; }
 
@@ -134,6 +170,27 @@ h3 {
 @media (min-width: 768px) {
   .carousel-item.large {
     width: 450px; } }
+/* Buttons */
+.btn.action {
+  color: #FFFFFC;
+  background-color: #EF2D56; }
+.btn.weak-action {
+  color: #FFFFFC;
+  background-color: #072212; }
+
+/* Helpers */
+.veil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.75; }
+
+.relative {
+  position: relative; }
+
 .what-is-biojs-el:before {
   /*font-family: FontAwesome; */
   font-family: Glyphicons Halflings;
@@ -165,7 +222,7 @@ h3 {
   display: none; }
 
 .header-section {
-  background-image: url("http://placebear.com/g/2400/1400");
+  background-image: url("/assets/img/landscapes/typing.jpg");
   position: relative;
   height: 80vh; }
 
@@ -216,9 +273,6 @@ h3 {
 .bg-section:first-child {
   background-image: url("http://placebear.com/g/900/500"); }
 
-.bg-section:nth-child(2) {
-  background-image: url("http://placebear.com/g/1600/500"); }
-
 .bg-section:nth-child(3) {
   background-image: none; }
 
@@ -245,7 +299,5 @@ h3 {
 @media (min-width: 1200px) {
   .what-is-biojs-el {
     width: 33.333%; } }
-* {
-  background-color: #1122dd; }
 
 /*# sourceMappingURL=main.css.map */
