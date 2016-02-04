@@ -138,9 +138,8 @@ h3 {
 .bg-section {
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-color: transparent;
-  height: 500px;
-  position: relative; }
+  position: relative;
+  min-height: 500px; }
 
 .bg-right {
   background-position: right 0; }
@@ -160,6 +159,51 @@ body {
 footer.page-footer {
   background-color: #116611; }
 
+p.signal {
+  font-size: 1.2em; }
+
+.github-icon.large {
+  width: 50%;
+  height: 50%;
+  fill: #FFFFFC; }
+
+.ratings .rating-item {
+  position: relative;
+  width: 25px;
+  display: inline-block;
+  /* &:before{
+    overflow: hidden;
+    content: "favorite";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: color('pink');
+    width: 0%;
+    height: 100%;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  } */ }
+  .ratings .rating-item .full-item {
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%; }
+
 .tag-brandpage h1 {
   font-size: 3.2em; }
 
@@ -171,13 +215,35 @@ footer.page-footer {
   .carousel-item.large {
     width: 450px; } }
 /* Buttons */
-.btn.action {
-  color: #FFFFFC;
-  background-color: #EF2D56; }
-.btn.weak-action {
-  color: #FFFFFC;
-  background-color: #072212; }
+.btn {
+  text-transform: uppercase; }
+  .btn.action {
+    color: #FFFFFC;
+    background-color: #EF2D56; }
+  .btn.weak-action {
+    color: #FFFFFC;
+    background-color: #072212; }
 
+/* Parallax */
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9); }
+
+.parallax-container .section {
+  width: 100%; }
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%; }
+
+  #index-banner .section {
+    top: 10%; } }
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0; } }
 /* Helpers */
 .veil {
   position: absolute;
@@ -191,35 +257,10 @@ footer.page-footer {
 .relative {
   position: relative; }
 
-.what-is-biojs-el:before {
-  /*font-family: FontAwesome; */
-  font-family: Glyphicons Halflings;
-  width: 20px;
-  display: inline-block; }
-
-.what-is-biojs-el {
-  padding-bottom: 10px;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-
-.what-is-biojs-el pre {
-  width: 250px; }
-
-.what-is-biojs-desc {
-  font-size: "10px";
-  padding-top: 5px;
-  padding-left: 40px;
-  font-style: italic; }
-
-#what-is-biojs-block {
-  padding-top: 20px;
-  padding-left: 20px; }
-
-.what-is-mobile {
-  display: none; }
+.text-shadow {
+  text-shadow: 2px 2px 3px #072212; }
+  .text-shadow.light {
+    text-shadow: 2px 2px 3px #FFFFFC; }
 
 .header-section {
   background-image: url("/assets/img/landscapes/typing.jpg");
@@ -270,15 +311,11 @@ footer.page-footer {
   -webkit-shape-outside: polygon(0px 90px, 45px 90px, 45px 300px, 0 300px, 0px 450px, 45px 450px, 45px 600px, 0px 600px);
   shape-outside: polygon(0px 90px, 45px 90px, 45px 300px, 0 300px, 0px 450px, 45px 450px, 45px 600px, 0px 600px); }
 
-.bg-section:first-child {
-  background-image: url("http://placebear.com/g/900/500"); }
-
-.bg-section:nth-child(3) {
-  background-image: none; }
-
+.bg-section.js-benefit {
+  background-image: url("/assets/img/landscapes/typing2-blend@1x.png");
+  background-position: right 0; }
 .bg-section:nth-child(4) {
   background-image: url("http://placebear.com/g/2200/500"); }
-
 .bg-section .shade {
   position: absolute;
   top: 0;

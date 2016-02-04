@@ -112,9 +112,8 @@ h3 {
 .bg-section {
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-color: transparent;
-  height: 500px;
   position: relative;
+  min-height: 500px;
 }
 .bg-right {
   background-position: right 0;
