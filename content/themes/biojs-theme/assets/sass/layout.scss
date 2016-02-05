@@ -1,5 +1,8 @@
 body {
   background-color: color('white');
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 footer {
   &.page-footer {
@@ -7,6 +10,18 @@ footer {
   }
 }
 
+/* IE10+ fix to circumvent poorly supported flexbox features */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body, main {
+            display: block;
+            min-height: auto;
+    }
+}
+
+main {
+  flex: 1 0 auto;
+}
+    
 p {
   &.signal{
     font-size: 1.2em;
@@ -35,30 +50,6 @@ p {
       width: 0%;
       height: 100%;
     }
-    /* &:before{
-      overflow: hidden;
-      content: "favorite";
-      position: absolute;
-      top: 0;
-      left: 0;
-      color: color('pink');
-      width: 0%;
-      height: 100%;
-      font-family: 'Material Icons';
-      font-weight: normal;
-      font-style: normal;
-      font-size: 24px;
-      line-height: 1;
-      letter-spacing: normal;
-      text-transform: none;
-      display: inline-block;
-      white-space: nowrap;
-      word-wrap: normal;
-      direction: ltr;
-      -webkit-font-feature-settings: 'liga';
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    } */
   }
 }
 
@@ -75,13 +66,14 @@ p {
  }
 }
 /* Buttons */
-.btn {
-  text-transform: uppercase;
+.btn, .btn-large {
   &.action {
+    text-transform: uppercase;
     color: color('white');
     background-color: color('pink');
   }
   &.weak-action {
+    text-transform: uppercase;
     color: color('white');
     background-color: color('black');
   }

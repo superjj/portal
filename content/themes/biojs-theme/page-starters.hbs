@@ -8,13 +8,13 @@
 {{#has tag="brandpage"}}
 {{! Everything inside the #post tags pulls data from the page }}
 
-    <div class="green darken-2 white-text">
+    <div class="biojs-green biojs-white-text">
       <div class="container">
        {{#get "posts" slug="starters-header"}}
         {{#foreach posts}}
             <div class="row">
               <div class="col s12">
-                <h1 class="brand-title">{{ title }}</h1>
+                <h1 class="brand-title light">{{ title }}</h1>
               </div>
             </div>
             <div class="row pb-2 mb-0">
@@ -22,7 +22,7 @@
                     {{ content }} <br/> 
               </div>        
               <div class="col s12 m5">
-                <p><a class="waves-effect waves-yellow btn uppercase red accent-4 white-text" href="#"><i class="material-icons left">play_arrow</i>Get Started</a></p>
+                <p><a class="waves-effect waves-blue btn-large action uppercase" href="#"><i class="material-icons left">play_arrow</i>Get Started</a></p>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
          {{> tip-section }}
       </div>
     </section>
-    <section class="green darken-4 white-text center">
+    <section class="biojs-black biojs-white-text center">
       {{> showcase}}
     </section>
     <section>
@@ -60,7 +60,7 @@
                 {{ content }}
               {{/foreach}}
             {{/get}}
-            <p class="center mt-4 mb-2"><a href="http://edu.biojs.net/101/intro/" class="waves-effect waves-yellow red acccent-4 btn-large">GET STARTED</a></p>
+            <p class="center mt-4 mb-2"><a href="http://edu.biojs.net/101/intro/" class="waves-effect waves-yellow action btn-large">GET STARTED</a></p>
           </div>
         </div>
       </div>
