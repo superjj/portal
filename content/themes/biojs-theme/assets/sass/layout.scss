@@ -65,6 +65,18 @@ p {
   width: 450px;
  }
 }
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 20vh;
+  .gallery-content {
+    padding: 4em 0;
+    height: 30vh;
+    width: 120%;
+    
+  }
+}
 /* Buttons */
 .btn, .btn-large {
   &.action {

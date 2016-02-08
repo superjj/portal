@@ -201,6 +201,16 @@ p.signal {
 @media (min-width: 768px) {
   .carousel-item.large {
     width: 450px; } }
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 20vh; }
+  .gallery-wrapper .gallery-content {
+    padding: 4em 0;
+    height: 30vh;
+    width: 120%; }
+
 /* Buttons */
 .btn.action, .btn-large.action {
   text-transform: uppercase;

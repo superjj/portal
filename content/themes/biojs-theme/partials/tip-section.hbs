@@ -1,3 +1,4 @@
+{{#has tag="brandpage-starters"}}
 <div class="col s12 m4">
   <div class="card biojs-green biojs-white-text">
     <div class="card-content white-text">
@@ -16,3 +17,25 @@
 <div class="col s12 m8">
   dakdlakdsald
 </div>
+{{else}}
+  {{#has tag="brandpage-developers"}}
+    <div class="col s12 m8">
+      dakdlakdsald
+    </div>
+    <div class="col s12 m4">
+      <div class="card biojs-pink biojs-white-text">
+        <div class="card-content white-text">
+          <span class="card-title">What's the technology behind BioJS components?</span>
+          <p>Javascript is by now one of the most ubiquitious programming languages on the web.
+          Any website containing dynamic user interactions, search functions, ... is based on 
+          the usage of Javascript or Javascript-based frameworks. Therefore building
+          websites and web applications becomes even more exciting when you're getting started
+          with Javascript!</p>
+        </div>
+        <div class="card-action">
+          <a target="biojs_resources" href="#">Learn more about Javascript</a>
+        </div>
+      </div>
+    </div>
+  {{/has}}
+{{/has}}

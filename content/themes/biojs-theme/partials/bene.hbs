@@ -19,15 +19,16 @@
         {{/get}}
       </div>
     {{else}}
-      {{#has tag="brandpage-devs"}}
-        {{#get "posts" slug="devs-benefits"}}
+      {{#has tag="brandpage-developers"}}
+        {{#get "posts" filter="tags:developers-bene"}}
           {{#foreach posts}}
-            <h2>{{title}}</h2>
-            </p>{{ content }} </p> 
+            <div class="col s12 m4">
+              <p><i class="material-icons biojs-pink-text center medium">{{meta_description}}</i></p>
+              <h3 class="biojs-pink-text">{{title}}</h3>
+              <p>{{content}}</p>
+            </div>
           {{/foreach}}
-        {{/get}}
-      {{else}}
-        This Brandpage hasn't been created yet.        
+        {{/get}}        
       {{/has}}
     {{/has}}
   </div>
