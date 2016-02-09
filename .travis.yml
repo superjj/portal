@@ -1,6 +1,7 @@
 language: node_js
 node_js:
 - '0.10'
+- '4.2.6'
 deploy:
   provider: openshift
   user: mybiojs@gmail.com

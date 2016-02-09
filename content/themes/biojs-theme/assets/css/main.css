@@ -1,0 +1,337 @@
+.biojs-green {
+  background-color: #116611; }
+
+.biojs-green-text {
+  color: #116611; }
+
+.biojs-light-green {
+  background-color: #04E824; }
+
+.biojs-light-green-text {
+  color: #04E824; }
+
+.biojs-white {
+  background-color: #FFFFFC; }
+
+.biojs-white-text {
+  color: #FFFFFC; }
+
+.biojs-black {
+  background-color: #072212; }
+
+.biojs-black-text {
+  color: #072212; }
+
+.biojs-pink {
+  background-color: #EF2D56; }
+
+.biojs-pink-text {
+  color: #EF2D56; }
+
+.brand-logo {
+  position: absolute;
+  display: inline-block;
+  left: 15px;
+  top: 8px; }
+
+.main-logo-title {
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  line-height: 1.6; }
+
+/* Helpers */
+.mt-0 {
+  margin-top: 0; }
+
+.mt-1 {
+  margin-top: 1.5em; }
+
+.mt-2 {
+  margin-top: 3em; }
+
+.mt-3 {
+  margin-top: 4.5em; }
+
+.mt-4 {
+  margin-top: 6em; }
+
+.mb-0 {
+  margin-bottom: 0; }
+
+.mb-1 {
+  margin-bottom: 1.5em; }
+
+.mb-2 {
+  margin-bottom: 3em; }
+
+.mb-3 {
+  margin-bottom: 4.5em; }
+
+.mb-4 {
+  margin-bottom: 6em; }
+
+.mv-0 {
+  margin-left: 0;
+  margin-right: 0; }
+
+.mv-1 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
+
+.pt-1 {
+  padding-top: 1.5em; }
+
+.pt-2 {
+  padding-top: 3em; }
+
+.pt-3 {
+  padding-top: 4.5em; }
+
+.pt-4 {
+  padding-top: 6em; }
+
+.pb-1 {
+  padding-bottom: 1.5em; }
+
+.pb-2 {
+  padding-bottom: 3em; }
+
+.pb-3 {
+  padding-bottom: 4.5em; }
+
+.pb-4 {
+  padding-bottom: 6em; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2; }
+
+h1 {
+  font-size: 3.6em; }
+
+h2 {
+  font-size: 2.4em; }
+
+h3 {
+  font-size: 2em; }
+
+/* Brandpage */
+.tag-brandpage h1 {
+  font-size: 3.2em; }
+
+/*Helpers*/
+.uppercase {
+  text-transform: uppercase; }
+
+.dropshadow {
+  box-shadow: 2px 2px 2px 2px #333; }
+
+.insetshadow {
+  box-shadow: inset 0px 2px 10px 2px #333; }
+
+.blunt-end {
+  margin-bottom: 0; }
+
+.signal {
+  font-size: 1.6em; }
+
+.bg-section {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  position: relative;
+  min-height: 500px; }
+
+.bg-right {
+  background-position: right 0; }
+
+.bg-left {
+  background-position: left 0; }
+
+.bg-center {
+  background-position: center center; }
+
+.bg-cover {
+  background-size: cover; }
+
+body {
+  background-color: #FFFFFC;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+footer.page-footer {
+  background-color: #116611; }
+
+/* IE10+ fix to circumvent poorly supported flexbox features */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body, main {
+    display: block;
+    min-height: auto; } }
+main {
+  flex: 1 0 auto; }
+
+p.signal {
+  font-size: 1.2em; }
+
+.github-icon.large {
+  width: 50%;
+  height: 50%;
+  fill: #FFFFFC; }
+
+.ratings .rating-item {
+  position: relative;
+  width: 25px;
+  display: inline-block; }
+  .ratings .rating-item .full-item {
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%; }
+
+.tag-brandpage h1 {
+  font-size: 3.2em; }
+
+.link-icon {
+  position: relative;
+  top: 2px; }
+
+@media (min-width: 768px) {
+  .carousel-item.large {
+    width: 450px; } }
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 20vh; }
+  .gallery-wrapper .gallery-content {
+    padding: 4em 0;
+    height: 30vh;
+    width: 120%; }
+
+/* Buttons */
+.btn.action, .btn-large.action {
+  text-transform: uppercase;
+  color: #FFFFFC;
+  background-color: #EF2D56; }
+.btn.weak-action, .btn-large.weak-action {
+  text-transform: uppercase;
+  color: #FFFFFC;
+  background-color: #072212; }
+
+/* Parallax */
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9); }
+
+.parallax-container .section {
+  width: 100%; }
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%; }
+
+  #index-banner .section {
+    top: 10%; } }
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0; } }
+/* Helpers */
+.veil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.75; }
+
+.relative {
+  position: relative; }
+
+.text-shadow {
+  text-shadow: 2px 2px 3px #072212; }
+  .text-shadow.light {
+    text-shadow: 2px 2px 3px #FFFFFC; }
+
+.header-section {
+  background-image: url("/assets/img/landscapes/typing.jpg");
+  position: relative;
+  height: 80vh; }
+
+.example-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative; }
+
+.example-banderole {
+  width: 120%;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  transition: transform 0.1s linear; }
+
+.example-wrapper:before {
+  box-shadow: 0 4px 8px 4px #333;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  top: -2px;
+  position: absolute;
+  z-index: 2; }
+
+.example-wrapper a {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0.5% 2%;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  z-index: 1; }
+
+.example-banderole:before {
+  content: '';
+  float: left;
+  width: 45px;
+  height: 9999px;
+  -webkit-shape-outside: polygon(0px 90px, 45px 90px, 45px 300px, 0 300px, 0px 450px, 45px 450px, 45px 600px, 0px 600px);
+  shape-outside: polygon(0px 90px, 45px 90px, 45px 300px, 0 300px, 0px 450px, 45px 450px, 45px 600px, 0px 600px); }
+
+.bg-section.js-benefit {
+  background-image: url("/assets/img/landscapes/typing2-blend@1x.png");
+  background-position: right 0; }
+.bg-section:nth-child(4) {
+  background-image: url("http://placebear.com/g/2200/500"); }
+.bg-section .shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(44, 44, 44, 0.7);
+  height: 500px;
+  width: 100%; }
+
+.bg-section .shade + .container {
+  position: relative; }
+
+@media (max-width: 650px) {
+  .what-is-biojs-el {
+    width: 100%; } }
+@media (min-width: 651px) {
+  .what-is-biojs-el {
+    width: 50%; } }
+@media (min-width: 1200px) {
+  .what-is-biojs-el {
+    width: 33.333%; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -17,10 +17,7 @@
     {{! Styles'n'Scripts }}
     <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    {{#is "home"}}
-      <link rel="stylesheet" type="text/css" href="{{asset "css/frontpage.css"}}" />
-    {{/is}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -33,7 +30,7 @@
         {{! Everything else gets inserted here }}
         {{{body}}}
 
-        <footer class="page-footer green darken-2">
+        <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -68,6 +65,13 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/default.js"}}"></script>
+    {{#is "home"}}
+      <script type="text/javascript" src="/assets/js/ratings.js"></script>
+      homehomehome
+    {{/is}}
+
+  
 
 </body>
 </html>
